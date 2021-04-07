@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "img": "../img/product01.png",
+    "name": "XPTO1",
+    "price": "300"
+  },
+  {
+    "id": "2",
+    "img": "../img/product03.png",
+    "name": "XPTO2",
+    "price": "350"
+  },
+  {
+    "id": "3",
+    "img": "../img/product06.png",
+    "name": "XPTO3",
+    "price": "500"
+  },
+  {
+    "id": "4",
+    "img": "../img/product08.png",
+    "name": "XPTO4",
+    "price": "400"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1",
+    "tipo": "Componentes",
+    "img": "../img/product16.png"
+  },
+  {
+    "id": "2",
+    "tipo": "Componentes",
+    "img": "../img/product15.png"
+  }
+]

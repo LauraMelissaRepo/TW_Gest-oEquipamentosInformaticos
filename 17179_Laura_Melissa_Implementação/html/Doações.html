@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>ReutilizouTec</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css"/>
+
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="../css/slick.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/slick-theme.css"/>
+
+    <!-- nouislider -->
+    <link type="text/css" rel="stylesheet" href="../css/nouislider.min.css"/>
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+
+    <![endif]-->
+
+</head>
+<body onload="loadDoacoes()">
+<!-- HEADER -->
+<header>
+    <!-- TOP HEADER -->
+    <div id="top-header">
+        <div class="container">
+            <ul class="header-links pull-left">
+                <li><a href="#"><i class="fa fa-phone"></i> 999999999</a></li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
+            </ul>
+            <ul class="header-links pull-right">
+                <li><a href="#"><i class="fa fa-user-o"></i> Minha Conta</a></li>
+                <li><a href="#"><i class="fa fa-user-o"></i> Laura</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- /TOP HEADER -->
+
+    <!-- MAIN HEADER -->
+    <div id="header">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- LOGO -->
+                <div class="col-md-3">
+                    <div class="header-logo">
+                        <a href="#" class="logo">
+                            <img src="../img/Logotipo.PNG" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- /LOGO -->
+
+
+                <!-- ACCOUNT -->
+                <div class="col-md-3 clearfix">
+                    <div class="header-ctn">
+
+                        <!-- Cart -->
+                        <div class="dropdown">
+                            <a href="Carrinho.html" class="dropdown-toggle">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span>Carrinho</span>
+                            </a>
+                        </div>
+                        <!-- /Cart -->
+
+                        <!-- Menu Toogle -->
+                        <div class="menu-toggle">
+                            <a href="#">
+                                <i class="fa fa-bars"></i>
+                                <span>Menu</span>
+                            </a>
+                        </div>
+                        <!-- /Menu Toogle -->
+                    </div>
+                </div>
+                <!-- /ACCOUNT -->
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+    </div>
+    <!-- /MAIN HEADER -->
+</header>
+<!-- /HEADER -->
+
+<!-- NAVIGATION -->
+<nav id="navigation">
+    <!-- container -->
+    <div class="container">
+        <!-- responsive-nav -->
+        <div id="responsive-nav">
+            <!-- NAV -->
+            <ul class="main-nav nav navbar-nav">
+                <li><a href="HomePage.html">Home</a></li>
+                <li class="active"><a href="Doações.html">Doações</a></li>
+                <li><a href="Compras.html">Compras</a></li>
+                <li><a href="#">Forúm</a></li>
+                <li><a href="#">Serviço ao Cliente</a></li>
+            </ul>
+            <!-- /NAV -->
+        </div>
+        <!-- /responsive-nav -->
+    </div>
+    <!-- /container -->
+</nav>
+<!-- /NAVIGATION -->
+
+
+<!-- SECTION -->
+<div class="section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <!-- section title -->
+            <div class="col-md-12">
+                <h3 class="breadcrumb-header">A nossa missão</h3>
+            </div>
+            <div id="spot">
+
+            </div>
+        </div>
+        <!-- /section title -->
+    </div>
+    <!-- row -->
+</div>
+<!-- container -->
+</div>
+<!-- SECTION -->
+
+<!-- SECTION -->
+<div class="section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <!-- section title -->
+            <div class="col-md-12">
+                <form>
+                    <!-- Nome do produto-->
+                    <div class="form-group">
+                        <label>Nome do produto</label>
+                        <input type="text" class="form-control" id="inputTitle" placeholder="nome">
+                    </div>
+                </form>
+            </div>
+            <!-- Tipo de produto -->
+            <div class="form-group col-md-4">
+                <label>Tipo de produto</label>
+                <select id="inputText" class="form-control">
+<!--                    <option value="computadores">Computadores</option>-->
+<!--                    <option value="mobilidade">Mobilidade</option>-->
+<!--                    <option value="componentes">Componentes</option>-->
+<!--                    <option value="periféricos">Periféricos</option>-->
+                </select>
+            </div>
+            <!--  Estado -->
+            <div class="col-md-4">
+                <label>Estado do produto</label>
+                <select id="condition" class="form-control">
+                    <option value="computadores">Novo</option>
+                    <option value="mobilidade">Semi-novo</option>
+                    <option value="componentes">Usado</option>
+                    <option value="componentes">Não funciona</option>
+                </select>
+            </div>
+            <div class="col-md-12">
+                <form>
+                    <!-- Observações-->
+                    <div class="form-group">
+                        <label>Observações</label>
+                        <input type="text" class="form-control" id="obvProduct"
+                               placeholder="Escreva aqui">
+                    </div>
+                </form>
+            </div>
+            <!-- Morada -->
+            <div class="col-md-12">
+                <form>
+                    <div class="form-group">
+                        <label>Morada de entrega</label>
+                        <input type="text" class="form-control" id="formGroupMorada" placeholder="Escreva aqui">
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-lg-12">
+                <label>Upload de imagens</label>
+<!--                <input type='file' onchange="readURL(this);" id="img" />-->
+                <label></label>
+                <input type="text" class="form-control" id="inputImg">
+                <label></label>
+                <button type="button" id="sub" class="btn" onclick="addItem()" href="2.html">Submeter</button>
+            </div>
+            <!-- /section title -->
+        </div>
+        <!-- row -->
+    </div>
+    <!-- container -->
+</div>
+
+<div class="section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <!-- section title -->
+            <div class="col-md-12">
+                <h3 class="breadcrumb-header" id="doacoes">As suas doações</h3>
+                <div id="aaaa">
+
+                </div>
+            </div>
+        </div>
+        <!-- /section title -->
+    </div>
+    <!-- row -->
+</div>
+
+<!-- FOOTER -->
+<footer id="footer">
+    <!-- top footer -->
+    <div class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="footer">
+                        <h3 class="footer-title">Entrega em 7 dias úteis</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="footer">
+                        <h3 class="footer-title">Portes de envio grátis a partir de 20€</h3>
+                    </div>
+                </div>
+
+                <div class="clearfix visible-xs"></div>
+
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /top footer -->
+
+</footer>
+<!-- /FOOTER -->
+
+<!-- jQuery Plugins -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/myjava.js"></script>
+</body>
+</html>
